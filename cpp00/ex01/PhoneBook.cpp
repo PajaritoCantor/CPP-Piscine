@@ -78,7 +78,7 @@ void PhoneBook::searchContact(void) const {
     return;
   }
 
-  // Imprimir cabecera de la tabla
+  // Print header table
   std::cout << "|" << std::setw(10) << std::right << "Index"
             << "|" << std::setw(10) << std::right << "First Name"
             << "|" << std::setw(10) << std::right << "Last Name"
@@ -107,7 +107,7 @@ void PhoneBook::searchContact(void) const {
     return;
   }
 
-  // Verificar si la entrada es un dígito del 0 al 7 y está en el rango correcto
+  // Verify if the enter is a digit from 0 to 7 and its in the correct range
   if (input.length() == 1 && input[0] >= '0' && input[0] <= '7') {
     int idx = input[0] - '0';
     if (idx < _total) {
