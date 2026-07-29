@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombie.hpp                                         :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 18:00:52 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/07/28 18:08:57 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/07/29 19:18:40 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,19 @@
 #include <string>
 #include <iostream>
 
-class Zombie{
+class Zombie
+{
 private:
     std::string _name;
+
 public:
     Zombie(std::string name);
     ~Zombie();
-    
-    void    announce(void);
+
+    void announce(void);
 };
 
-Zombie* newZombie(std::string name);
-void    randomChump(std::string name);
+Zombie *newZombie(std::string name);
+void randomChump(std::string name);
 
 #endif

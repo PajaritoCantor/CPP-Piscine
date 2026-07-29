@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/28 18:09:52 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/07/28 18:29:28 by jurodrig         ###   ########.fr       */
+/*   Created: 2026/07/29 15:49:36 by jurodrig          #+#    #+#             */
+/*   Updated: 2026/07/29 15:54:48 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-// Constructor
-Zombie::Zombie(std::string name) : _name(name) {}
-
-// Destructor
-Zombie::~Zombie()
+// Allocates a Zombie on the heap
+// It will persist in memor until you explicitily call 'delete' on it.
+Zombie *newZombie(std::string name)
 {
-    std::cout << _name << " has been destroyed." << std::endl;
-}
-
-// Member function
-void Zombie::announce(void)
-{
-    std::cout << _name << ": BraiiiiiiinnnzzZ..." << std::endl;
+    return new Zombie(name);
 }
