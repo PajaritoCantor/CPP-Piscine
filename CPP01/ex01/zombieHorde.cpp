@@ -6,7 +6,7 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/31 16:34:03 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/07/31 17:01:48 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/03 17:14:40 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,8 @@
 
 Zombie *zombieHorde(int N, std::string name)
 {
-    // 1. Bulk allocation: We reate N zombie on the heap.
+    // 1. Bulk allocation: We create N zombie on the heap.
     // This automatically calls Zombie() N times.
-
     Zombie *horde = new Zombie[N];
 
     // 2. Baptism: We move through the horde and user our public window.

@@ -6,7 +6,7 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/31 16:22:00 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/07/31 16:48:22 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/03 17:09:11 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,7 @@ public:
     void announce(void);
     void setName(std::string name);
 };
+
+Zombie *zombieHorde(int N, std::string name);
 
 #endif

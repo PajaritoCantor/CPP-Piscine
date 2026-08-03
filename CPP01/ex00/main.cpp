@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Main.cpp                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 17:25:05 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/07/29 17:41:04 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/03 15:55:42 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main()
 {
     std::cout << "--- Testing Stack Allocation ---" << std::endl;
     // Calling RandomChump creates a zombie on the stack.
-    //  Notice in the output that its destructor is caalled inmediately after it announces itself,
+    //  Notice in the output that its destructor is called inmediately after it announces itself,
     //  because its goes out of scope when the function ends.
     randomChump("Stacky");
 
