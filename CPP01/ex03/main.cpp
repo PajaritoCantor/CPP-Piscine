@@ -6,12 +6,12 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/31 00:00:00 by copilot           #+#    #+#             */
-/*   Updated: 2026/07/31 00:00:00 by copilot          ###   ########.fr       */
+/*   Updated: 2026/08/04 17:13:00 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+#include "inc/HumanA.hpp"
+#include "inc/HumanB.hpp"
 
 int main()
 {

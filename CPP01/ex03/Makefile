@@ -1,5 +1,5 @@
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -I inc
 CPPFLAGS = -Iinc
 
 NAME = weapon
@@ -12,12 +12,18 @@ OBJS = $(SRC:%.cpp=$(OBJ_DIR)%.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-		$(CC) $(CFLAGS) $(CPPFLAGS) -o $(NAME) $(OBJS)
+		@$(CC) $(CFLAGS) $(CPPFLAGS) -o $(NAME) $(OBJS)
+		@echo "\033[32m[OK] Compiling $(NAME)\033[0m"
+
 $(OBJ_DIR)%.o: %.cpp
 		@mkdir -p $(OBJ_DIR)
-		$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
+		@$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 clean:
-		rm -rf $(OBJ_DIR)
+		@rm -rf $(OBJ_DIR)
+		@echo "\033[33m[CLEAN] Removing object directory\033[0m"
+
 fclean: clean
-		rm -f $(NAME)
+		@rm -f $(NAME)
+		@echo "\033[31m[FCLEAN] Removing executable and test files\033[0m"
+
 re: fclean all

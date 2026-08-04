@@ -6,7 +6,7 @@
 #    By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/31 16:22:08 by jurodrig          #+#    #+#              #
-#    Updated: 2026/07/31 17:03:59 by jurodrig         ###   ########.fr        #
+#    Updated: 2026/08/04 17:23:52 by jurodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,13 +23,18 @@ OBJS = $(SRC:%.cpp=$(OBJ_DIR)%.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-		$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+		@$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+		@echo "\033[32m[OK] Compiling $(NAME)\033[0m"
 $(OBJ_DIR)%.o: %.cpp
 		@mkdir -p $(OBJ_DIR)
-			$(CC) $(CFLAGS) -c $< -o $@
+			@$(CC) $(CFLAGS) -c $< -o $@
 clean:
-		rm -rf $(OBJ_DIR)
+		@rm -rf $(OBJ_DIR)
+		@echo "\033[33m[CLEAN] Removing object directory\033[0m"
+		
 fclean: clean
-		rm -f $(NAME)
+		@rm -f $(NAME)
+		@echo "\033[31m[FCLEAN] Removing executable and test files\033[0m"
+
 re: fclean all
 

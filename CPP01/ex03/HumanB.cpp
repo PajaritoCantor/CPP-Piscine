@@ -6,12 +6,12 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/31 00:00:00 by copilot           #+#    #+#             */
-/*   Updated: 2026/07/31 00:00:00 by copilot          ###   ########.fr       */
+/*   Updated: 2026/08/04 17:10:29 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "HumanB.hpp"
+#include "inc/HumanB.hpp"
 
 HumanB::HumanB(std::string name) : name(name), weapon(NULL)
 {
