@@ -1,5 +1,6 @@
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
+CPPFLAGS = -Iinc
 
 NAME = weapon
 
@@ -11,10 +12,10 @@ OBJS = $(SRC:%.cpp=$(OBJ_DIR)%.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-		$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+		$(CC) $(CFLAGS) $(CPPFLAGS) -o $(NAME) $(OBJS)
 $(OBJ_DIR)%.o: %.cpp
 		@mkdir -p $(OBJ_DIR)
-		$(CC) $(CFLAGS) -c $< -o $@
+		$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 clean:
 		rm -rf $(OBJ_DIR)
 fclean: clean
