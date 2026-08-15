@@ -6,13 +6,13 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/13 19:19:13 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/08/13 19:37:30 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/15 19:34:48 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
-// Constructor por defecto
+// Default Constructor
 ScavTrap::ScavTrap() : ClapTrap()
 {
     this->_hitPoints = 100;
@@ -25,7 +25,7 @@ ScavTrap::ScavTrap() : ClapTrap()
 ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name)
 {
     this->_hitPoints = 100;
-    this->_energyPoints = 50;
+    this->_energyPoints = 90;
     this->_attackDamage = 20;
     std::cout << "ScavTrap " << this->_name << " has been constructed!" << std::endl;
 }
