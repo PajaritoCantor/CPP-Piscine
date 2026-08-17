@@ -6,11 +6,11 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 01:59:41 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/08/16 22:21:54 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/17 01:11:04 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "Inc/Animal.hpp"
 
 Animal::Animal() : type("Animal")
 {

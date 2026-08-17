@@ -6,11 +6,11 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 21:45:09 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/08/16 22:21:50 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/17 01:28:51 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "WrongAnimal.hpp"
+#include "Inc/WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal() : type("WrongAnimal")
 {

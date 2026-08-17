@@ -6,16 +6,16 @@
 #    By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/14 19:47:50 by jurodrig          #+#    #+#              #
-#    Updated: 2026/08/16 01:58:39 by jurodrig         ###   ########.fr        #
+#    Updated: 2026/08/17 02:04:54 by jurodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CXX = c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -I Inc/
 
-NAME = Animal
+NAME = polymorphism
 
-SRC = main.cpp Animal.cpp
+SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
 OBJ_DIR = obj/
 
 OBJS = $(SRC:%.cpp=$(OBJ_DIR)%.o)
@@ -23,12 +23,12 @@ OBJS = $(SRC:%.cpp=$(OBJ_DIR)%.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+	@$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 	@echo "\033[32m[OK] Compiling $(NAME)\033[0m"
 
 $(OBJ_DIR)%.o: %.cpp
 	@mkdir -p $(OBJ_DIR)
-	@$(CC) $(CFLAGS) -c $< -o $@
+	@$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	@rm -rf $(OBJ_DIR)

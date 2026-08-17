@@ -6,11 +6,11 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 20:47:00 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/08/16 20:55:13 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/17 01:10:02 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "Inc/Dog.hpp"
 
 Dog::Dog()
 {
@@ -19,12 +19,6 @@ Dog::Dog()
 }
 
 Dog::Dog(const Dog &other) : Animal(other)
-{
-    std::cout << "[Dog] Copy constructor called." << std::endl;
-    *this = other;
-}
-
-Dog &Dog::operator=(const Dog &other)
 {
     std::cout << "[Dog] Copy constructor called." << std::endl;
     *this = other;

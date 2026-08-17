@@ -6,14 +6,15 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 21:00:35 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/08/16 21:41:26 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/17 01:21:03 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "Inc/Cat.hpp"
 
 Cat::Cat()
 {
+    this->type = "Cat";
     std::cout << "[Cat] Default constructor called." << std::endl;
 }
 

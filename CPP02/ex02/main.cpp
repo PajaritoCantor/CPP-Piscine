@@ -6,7 +6,7 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 20:03:06 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/08/11 17:19:42 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/11 18:09:37 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,8 +83,8 @@ int main(void)
     std::cout << "a--       : " << a-- << std::endl;
     std::cout << "a         : " << a << std::endl;
 
-    std::cout << "\n--- 2. ARTIMETIC OPERATOR TESTS ---" << std::endl;
-    std::cout << "c value: " << c << " | Valor de d: " << d << std::endl;
+    std::cout << "\n--- 2. ARITMETIC OPERATOR TESTS ---" << std::endl;
+    std::cout << "c value: " << c << " | d value: " << d << std::endl;
     std::cout << "Addition (c + d)  : " << c + d << std::endl;
     std::cout << "Substraction (c - d) : " << c - d << std::endl;
     std::cout << "Mult (c * d) : " << c * d << std::endl;
@@ -102,7 +102,7 @@ int main(void)
     std::cout << std::noboolalpha; // We restore normal output.
 
     std::cout << "\n--- 4. STATIC FUNCTION TESTS (MAX AND MIN) ---" << std::endl;
-    std::cout << "b constante: " << b << std::endl;
+    std::cout << "b constant: " << b << std::endl;
     std::cout << "Max(a, b) (Call to const version)   : " << Fixed::max(a, b) << std::endl;
     std::cout << "Min(a, b) (Call to const version)   : " << Fixed::min(a, b) << std::endl;
     std::cout << "Max(c, d) (Call to normal version)  : " << Fixed::max(c, d) << std::endl;

@@ -6,11 +6,11 @@
 /*   By: jurodrig <jurodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 22:26:09 by jurodrig          #+#    #+#             */
-/*   Updated: 2026/08/16 22:32:09 by jurodrig         ###   ########.fr       */
+/*   Updated: 2026/08/17 01:29:02 by jurodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "WrongCat.hpp"
+#include "Inc/WrongCat.hpp"
 
 WrongCat::WrongCat()
 {
